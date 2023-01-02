@@ -1,0 +1,24 @@
+// Colors 
+
+$background: #F4F1EB;
+$pink: #DED4C9;
+$black-paragraph: rgb(47, 47, 47);
+
+// Mixins
+
+@mixin button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid $black-paragraph 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@mixin h1-styling {
+    font-family: 'feliz';
+    font-size: 4rem;
+    text-align: center;
+}
+

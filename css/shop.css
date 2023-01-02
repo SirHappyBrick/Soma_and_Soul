@@ -1,0 +1,290 @@
+.shop .wrapper {
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 25rem;
+}
+.shop .wrapper .left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10rem;
+}
+.shop .wrapper .left-container .text-container p {
+  font-family: "rotunda-light";
+  font-size: 2.1rem;
+}
+.shop .wrapper .left-container .text-container p.bold {
+  font-family: "rotunda-regular";
+}
+.shop .wrapper .left-container .text-container .m1 {
+  margin-top: 10rem;
+}
+.shop .wrapper .left-container .text-container .m2 {
+  margin-top: 3rem;
+}
+.shop .wrapper .left-container .img-container {
+  margin-top: 12rem;
+  width: 80rem;
+  height: 55rem;
+  position: relative;
+}
+.shop .wrapper .left-container .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shop .wrapper .left-container .img-container .stripe {
+  background-color: #F4F1EB;
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+.shop .wrapper .right-container h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  font-size: 4.5rem;
+}
+.shop .wrapper .right-container .inputs {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 32vw;
+}
+.shop .wrapper .right-container .inputs input {
+  border: solid rgb(47, 47, 47) 1px;
+  border-radius: 25px;
+  padding: 1.5rem 4rem;
+  margin-top: 3.5rem;
+  text-transform: none;
+}
+.shop .wrapper .right-container .inputs textarea {
+  border: solid rgb(47, 47, 47) 1px;
+  border-radius: 25px;
+  height: 40rem;
+  padding: 2.6rem 4rem;
+  margin-top: 3.5rem;
+  text-transform: none;
+}
+.shop .wrapper .right-container .inputs button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(47, 47, 47) 1px;
+  padding: 2rem 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2rem 7rem;
+  margin: 7rem auto 0 auto;
+}
+.shop .wrapper .right-container .inputs .checkbox-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.shop .wrapper .right-container .inputs .checkbox-container input {
+  cursor: pointer;
+}
+.shop .wrapper .right-container .inputs .m1 {
+  margin-bottom: 1rem;
+}
+.shop .wrapper .right-container .inputs .hide {
+  display: none;
+}
+
+@media (max-width: 1499px) {
+  .shop .wrapper {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    gap: 12rem;
+  }
+  .shop .wrapper .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .shop .wrapper .left-container .text-container p {
+    font-family: "rotunda-light";
+    font-size: 1.8rem;
+  }
+  .shop .wrapper .left-container .text-container p.bold {
+    font-family: "rotunda-regular";
+  }
+  .shop .wrapper .left-container .text-container .m1 {
+    margin-top: 8rem;
+  }
+  .shop .wrapper .left-container .text-container .m2 {
+    margin-top: 3rem;
+  }
+  .shop .wrapper .left-container .img-container {
+    margin-top: 12rem;
+    width: 60rem;
+    height: 44rem;
+  }
+  .shop .wrapper .left-container .img-container .stripe {
+    width: 15%;
+    top: 0;
+    left: 15%;
+  }
+  .shop .wrapper .right-container h2 {
+    font-size: 4.2rem;
+  }
+  .shop .wrapper .right-container .inputs {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+  }
+  .shop .wrapper .right-container .inputs input {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    padding: 1.5rem 4rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .shop .wrapper .right-container .inputs textarea {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    height: 34rem;
+    padding: 2.6rem 4rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .shop .wrapper .right-container .inputs button {
+    padding: 2rem 7rem;
+    margin: 7rem auto 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .shop .img-container {
+    margin-top: 8rem;
+    width: 100vw;
+    height: 45rem;
+  }
+  .shop .wrapper {
+    flex-direction: column-reverse;
+    padding-top: 14rem;
+    padding-bottom: 6rem;
+    gap: 0;
+  }
+  .shop .wrapper .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop .wrapper .left-container .text-container p {
+    font-size: 1.8rem;
+  }
+  .shop .wrapper .left-container .text-container .m1 {
+    margin-top: 8rem;
+  }
+  .shop .wrapper .left-container .text-container .m2 {
+    margin-top: 3rem;
+  }
+  .shop .wrapper .left-container .img-container {
+    margin-top: 12rem;
+    width: 100vw;
+    height: 44rem;
+  }
+  .shop .wrapper .left-container .img-container .stripe {
+    width: 15%;
+    top: 0;
+    left: 15%;
+  }
+  .shop .wrapper .right-container h2 {
+    font-size: 4.2rem;
+  }
+  .shop .wrapper .right-container .inputs {
+    margin: 0 auto;
+    margin-top: 8rem;
+    width: 72vw;
+  }
+  .shop .wrapper .right-container .inputs input {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    padding: 1.5rem 4rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .shop .wrapper .right-container .inputs textarea {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    height: 34rem;
+    padding: 2.6rem 4rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .shop .wrapper .right-container .inputs button {
+    padding: 2rem 7rem;
+    margin: 7rem auto 0 auto;
+  }
+}
+@media (max-width: 599px) {
+  .shop .img-container {
+    margin-top: 4rem;
+    width: 100vw;
+    height: 50rem;
+  }
+  .shop .wrapper {
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+  .shop .wrapper .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop .wrapper .left-container .text-container p {
+    font-size: 1.6rem;
+  }
+  .shop .wrapper .left-container .text-container .m1 {
+    margin-top: 5rem;
+  }
+  .shop .wrapper .left-container .text-container .m2 {
+    margin-top: 3rem;
+  }
+  .shop .wrapper .left-container .img-container {
+    margin-top: 6rem;
+    width: 100vw;
+    height: 44rem;
+  }
+  .shop .wrapper .left-container .img-container .stripe {
+    width: 15%;
+    top: 0;
+    left: 15%;
+  }
+  .shop .wrapper .right-container h2 {
+    font-size: 2.8rem;
+  }
+  .shop .wrapper .right-container .inputs {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 92vw;
+  }
+  .shop .wrapper .right-container .inputs input {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    padding: 1.4rem 3.2rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .shop .wrapper .right-container .inputs textarea {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    height: 30rem;
+    padding: 2.6rem 3.2rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .shop .wrapper .right-container .inputs button {
+    padding: 2rem 7rem;
+    margin: 7rem auto 0 auto;
+  }
+}/*# sourceMappingURL=shop.css.map */

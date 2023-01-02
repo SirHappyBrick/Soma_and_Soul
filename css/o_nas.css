@@ -1,0 +1,390 @@
+.introduction {
+  background-color: #F4F1EB;
+}
+.introduction .container-one {
+  padding-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.introduction .container-one .signet-container {
+  width: 8rem;
+}
+.introduction .container-one .signet-container img {
+  width: 100%;
+}
+.introduction .container-one .text-container {
+  width: 46%;
+}
+.introduction .container-one .text-container p {
+  margin-top: 6rem;
+  font-size: 1.9rem;
+  text-align: center;
+  color: rgb(47, 47, 47);
+  font-family: "rotunda-light";
+}
+
+.employees {
+  background-color: #F4F1EB;
+  padding-top: 8rem;
+}
+.employees .container .employees-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+  margin-top: 10rem;
+}
+.employees .container .employees-wrapper .one-employee .img-container {
+  width: 35vw;
+  height: 46vw;
+}
+.employees .container .employees-wrapper .one-employee .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.employees .container .employees-wrapper .one-employee h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 6rem;
+}
+.employees .container .employees-wrapper .one-employee h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.employees .container .employees-wrapper .one-employee p {
+  margin-top: 4rem;
+  width: 35vw;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "rotunda-light";
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.employees .container .employees-wrapper .one-employee .line-clamp {
+  display: block;
+}
+.employees .container .employees-wrapper .one-employee .read-more {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 2rem;
+  cursor: pointer;
+}
+.employees .container .employees-wrapper .one-employee .read-more p {
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: "feliz";
+  font-size: 2.4rem;
+}
+.employees .container .employees-wrapper .one-employee .read-more i {
+  transform: rotate(180deg);
+  font-size: 2.2rem;
+}
+.employees .container .employees-wrapper .one-employee .read-more .rotate {
+  transform: rotate(360deg);
+}
+
+.salon-presentation {
+  background-color: #F4F1EB;
+  padding: 0 10rem;
+  padding-top: 16rem;
+}
+.salon-presentation .container, .salon-presentation .one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18rem;
+}
+.salon-presentation .container .text-container, .salon-presentation .one .text-container {
+  width: 30vw;
+}
+.salon-presentation .container .text-container h2, .salon-presentation .one .text-container h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  text-align: left;
+}
+.salon-presentation .container .text-container p, .salon-presentation .one .text-container p {
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  font-family: "rotunda-light";
+}
+.salon-presentation .container .imgs-container, .salon-presentation .one .imgs-container {
+  display: flex;
+  align-items: center;
+  width: 60vw;
+  gap: 10rem;
+}
+.salon-presentation .container .imgs-container .img-container-small, .salon-presentation .one .imgs-container .img-container-small {
+  width: 30%;
+}
+.salon-presentation .container .imgs-container .img-container-small img, .salon-presentation .one .imgs-container .img-container-small img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.salon-presentation .container .imgs-container .img-container-big, .salon-presentation .one .imgs-container .img-container-big {
+  width: 50%;
+  height: 28vw;
+}
+.salon-presentation .container .imgs-container .img-container-big img, .salon-presentation .one .imgs-container .img-container-big img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.salon-presentation .two {
+  padding-top: 16rem;
+}
+.salon-presentation .two .img-container {
+  width: 50vw;
+  height: 55vh;
+}
+.salon-presentation .two .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.salon-presentation .two .text-container h2, .salon-presentation .two .text-container p {
+  text-align: right;
+}
+
+@media (max-width: 1499px) {
+  .introduction .container-one {
+    padding-top: 14rem;
+  }
+  .introduction .container-one .signet-container {
+    width: 8rem;
+  }
+  .introduction .container-one .text-container {
+    width: 56%;
+  }
+  .introduction .container-one .text-container p {
+    margin-top: 6rem;
+    font-size: 1.9rem;
+  }
+  .salon-presentation {
+    padding: 0 10rem;
+    padding-top: 16rem;
+  }
+  .salon-presentation .container, .salon-presentation .one {
+    gap: 12rem;
+  }
+  .salon-presentation .container .text-container, .salon-presentation .one .text-container {
+    width: 33vw;
+  }
+  .salon-presentation .container .text-container h2, .salon-presentation .one .text-container h2 {
+    font-size: 3.2rem;
+  }
+  .salon-presentation .container .text-container p, .salon-presentation .one .text-container p {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+  .salon-presentation .container .imgs-container, .salon-presentation .one .imgs-container {
+    width: 60vw;
+    gap: 10rem;
+  }
+  .salon-presentation .container .imgs-container .img-container-small, .salon-presentation .one .imgs-container .img-container-small {
+    width: 30%;
+  }
+  .salon-presentation .container .imgs-container .img-container-big, .salon-presentation .one .imgs-container .img-container-big {
+    width: 50%;
+    height: 28vw;
+  }
+}
+@media (max-width: 1024px) {
+  .introduction .container-one {
+    padding-top: 12rem;
+  }
+  .introduction .container-one .signet-container {
+    width: 8rem;
+  }
+  .introduction .container-one .text-container {
+    width: 66%;
+  }
+  .introduction .container-one .text-container p {
+    margin-top: 6rem;
+    font-size: 1.9rem;
+  }
+  .employees {
+    padding-top: 8rem;
+  }
+  .employees .container .employees-wrapper {
+    gap: 6rem;
+    margin-top: 10rem;
+  }
+  .employees .container .employees-wrapper .one-employee .img-container {
+    width: 35vw;
+    height: 50vw;
+  }
+  .employees .container .employees-wrapper .one-employee h2 {
+    font-size: 3.6rem;
+    margin-top: 6rem;
+  }
+  .employees .container .employees-wrapper .one-employee h4 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .employees .container .employees-wrapper .one-employee p {
+    margin-top: 3rem;
+    width: 35vw;
+    font-size: 1.6rem;
+    -webkit-line-clamp: 3;
+  }
+  .employees .container .employees-wrapper .one-employee .read-more {
+    margin-top: 1.5rem;
+    gap: 2rem;
+  }
+  .employees .container .employees-wrapper .one-employee .read-more p {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .employees .container .employees-wrapper .one-employee .read-more i {
+    transform: rotate(180deg);
+    font-size: 2rem;
+  }
+  .salon-presentation {
+    padding: 0 10rem;
+    padding-top: 16rem;
+  }
+  .salon-presentation .container, .salon-presentation .one {
+    gap: 4rem;
+    flex-direction: column;
+  }
+  .salon-presentation .container .text-container, .salon-presentation .one .text-container {
+    width: 90vw;
+  }
+  .salon-presentation .container .text-container h2, .salon-presentation .one .text-container h2 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .salon-presentation .container .text-container p, .salon-presentation .one .text-container p {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+  .salon-presentation .container .imgs-container, .salon-presentation .one .imgs-container {
+    width: 100vw;
+    gap: 10rem;
+  }
+  .salon-presentation .container .imgs-container .img-container-small, .salon-presentation .one .imgs-container .img-container-small {
+    display: none;
+  }
+  .salon-presentation .container .imgs-container .img-container-big, .salon-presentation .one .imgs-container .img-container-big {
+    width: 100%;
+    height: 70vh;
+  }
+  .salon-presentation .two {
+    flex-direction: column-reverse;
+    padding-top: 9rem;
+  }
+  .salon-presentation .two .img-container {
+    width: 100vw;
+    height: 68vh;
+  }
+  .salon-presentation .two .text-container h2 {
+    text-align: center;
+  }
+  .salon-presentation .two .text-container p {
+    text-align: left;
+  }
+}
+@media (max-width: 599px) {
+  .introduction .container-one {
+    padding-top: 6rem;
+  }
+  .introduction .container-one .signet-container {
+    width: 8rem;
+  }
+  .introduction .container-one .text-container {
+    width: 88%;
+  }
+  .introduction .container-one .text-container p {
+    margin-top: 6rem;
+    text-align: left;
+    font-size: 1.6rem;
+  }
+  .employees {
+    padding-top: 1rem;
+  }
+  .employees .container .employees-wrapper {
+    gap: 6rem;
+    margin-top: 10rem;
+    flex-direction: column;
+  }
+  .employees .container .employees-wrapper .one-employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .employees .container .employees-wrapper .one-employee .img-container {
+    width: 100vw;
+    height: 70vh;
+  }
+  .employees .container .employees-wrapper .one-employee h2 {
+    font-size: 3.6rem;
+    margin-top: 3rem;
+  }
+  .employees .container .employees-wrapper .one-employee h4 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .employees .container .employees-wrapper .one-employee p {
+    margin-top: 3rem;
+    width: 92vw;
+    font-size: 1.6rem;
+    -webkit-line-clamp: 3;
+  }
+  .employees .container .employees-wrapper .one-employee .read-more {
+    margin-top: 1.5rem;
+    gap: 2rem;
+  }
+  .employees .container .employees-wrapper .one-employee .read-more p {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .employees .container .employees-wrapper .one-employee .read-more i {
+    transform: rotate(180deg);
+    font-size: 2rem;
+  }
+  .salon-presentation {
+    padding: 0 10rem;
+    padding-top: 16rem;
+  }
+  .salon-presentation .container, .salon-presentation .one {
+    gap: 4rem;
+  }
+  .salon-presentation .container .text-container, .salon-presentation .one .text-container {
+    width: 92vw;
+  }
+  .salon-presentation .container .text-container h2, .salon-presentation .one .text-container h2 {
+    font-size: 2.6rem;
+  }
+  .salon-presentation .container .text-container p, .salon-presentation .one .text-container p {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+  .salon-presentation .container .imgs-container, .salon-presentation .one .imgs-container {
+    width: 100vw;
+    gap: 10rem;
+  }
+  .salon-presentation .container .imgs-container .img-container-big, .salon-presentation .one .imgs-container .img-container-big {
+    width: 100%;
+    height: 78vh;
+  }
+}/*# sourceMappingURL=o_nas.css.map */

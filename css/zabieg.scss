@@ -1,0 +1,710 @@
+// Colors 
+
+$background: #F4F1EB;
+$pink: #DED4C9;
+$black-paragraph: rgb(47, 47, 47);
+
+// Mixins
+
+@mixin button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid $black-paragraph 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@mixin h1-styling {
+    font-family: 'feliz';
+    font-size: 4rem;
+    text-align: center;
+}
+
+// Single procedure styling
+
+.procedure-desc {
+
+    .img-container {
+        margin: 10rem 0;
+        width: 100vw; height: 62rem;
+        position: relative;
+
+        img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+
+        .stripe {
+            background-color: $background;
+            height: 100%;
+            width: 4%;
+
+            position: absolute;
+            top: 0; left: 25%;
+        }
+    }
+
+    .good-to-know {
+
+        h2.name {
+            margin: 15rem 0;
+            @include h1-styling();
+            font-size: 5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100vw;
+            gap: 4rem;
+
+            border-top: 1px black solid;
+            border-bottom: 1px black solid;
+
+            p {
+                font-size: 2.1rem;
+                font-family: 'rotunda-light';
+                color: $black-paragraph;
+                padding: 3rem 0;
+
+                .bold {
+                    font-family: 'rotunda-regular';
+                    color: $black-paragraph;
+                }
+            }
+        }
+    }
+
+    .recomendations {
+        margin-top: 10rem;
+
+        p {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .text-container {
+            width: 60vw;
+            margin: 0 auto;
+
+            p {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+
+        .wrapper {
+            padding-top: 8rem;
+            padding-bottom: 10rem;
+            display: flex;
+            justify-content: center;
+
+            .column {
+                margin-top: 6rem;
+                width: 30vw;
+
+                h1 {
+                    @include h1-styling();
+                    text-align: left;
+                    font-family: 'feliz';
+                    font-weight: 600;
+                    font-size: 4.5rem;
+                    margin-bottom: 10rem;
+                }
+
+                p {
+                    font-family: 'rotunda-light';
+                    font-size: 2.2rem;
+                    line-height: 150%;
+                    max-width: 26vw;
+                    text-align: left;
+                }
+            }
+
+            .one {
+                padding-right: 14rem;
+                border-right: black solid 1px;
+            }
+
+            .two {
+                padding-left: 14rem;
+            }
+        }
+
+        .button-container {  
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                gap: 10rem;
+                
+                a {
+                    .button-regular {
+                        @include button-regular();
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq {
+        .wrapper {
+            max-width: 80vw;
+            margin: 10rem auto 20rem auto;
+
+            h1 {
+                @include h1-styling();
+                text-align: left;
+                font-family: 'feliz';
+                font-size: 6rem;
+                margin-bottom: 4rem;
+            }
+
+            .question {
+                margin-bottom: 4rem;
+                border-bottom: 1px $black-paragraph solid;
+                padding-bottom: 6rem;
+
+                .question-title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-transform: capitalize;
+        
+                    h2 {
+                        @include h1-styling();
+                        font-size: 2.8rem;
+                        font-family: 'rotunda-regular';
+                    }
+                }
+        
+                .question-text {
+                    p {
+                        font-family: 'rotunda-light';
+                        font-size: 2.4rem;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+.other-categories {
+    background-color: $background;
+
+    .header-container {
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10rem;
+
+        h4 {
+            font-size: 3.2rem;
+            font-family: 'feliz';
+        }
+
+        .line {
+            width: 70vw;
+            height: 1px;
+            background-color: $black-paragraph;
+        }
+    }
+}
+
+// Media queries
+
+@media (max-width: 1499px) {
+
+    // Single procedure styling
+
+    .procedure-desc {
+
+        .img-container {
+            margin: 10rem 0;
+            width: 100vw; height: 50rem;
+
+            .stripe {
+                width: 4%;
+                top: 0; left: 25%;
+            }
+        }
+
+        .good-to-know {
+            h2.name {
+                margin: 10rem 0;
+                font-size: 4rem;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .wrapper {
+                width: 100vw;
+                gap: 4rem;
+
+                p {
+                    font-size: 1.6rem;
+                    padding: 3rem 0;
+                }
+            }
+        }
+
+        .recomendations {
+            margin-top: 10rem;
+
+            .text-container {
+                width: 64vw;
+                margin: 0 auto;
+
+                p {
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
+            }
+
+            .wrapper {
+                padding-top: 8rem;
+                padding-bottom: 4rem;
+                display: flex;
+                justify-content: center;
+
+                .column {
+                    margin-top: 6rem;
+                    width: 30vw;
+
+                    h1 {
+                        @include h1-styling();
+                        text-align: left;
+                        font-family: 'feliz';
+                        font-weight: 600;
+                        font-size: 3.8rem;
+                        margin-bottom: 6rem;
+                    }
+
+                    p {
+                        font-family: 'rotunda-light';
+                        font-size: 1.7rem;
+                        line-height: 150%;
+                        max-width: 26vw;
+                        text-align: left;
+                    }
+                }
+
+                .one {
+                    padding-right: 12rem;
+                    border-right: black solid 1px;
+                }
+
+                .two {
+                    padding-left: 12rem;
+                }
+            }
+
+            .button-container {  
+                .wrapper {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10rem;
+                    
+                    a {
+                        .button-regular {
+                            @include button-regular();
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq {
+            .wrapper {
+                max-width: 80vw;
+                margin: 10rem auto 20rem auto;
+
+                h1 {
+                    @include h1-styling();
+                    text-align: left;
+                    font-family: 'feliz';
+                    font-size: 5rem;
+                    margin-bottom: 4rem;
+                }
+
+                .question {
+                    margin-bottom: 4rem;
+                    border-bottom: 1px $black-paragraph solid;
+                    padding-bottom: 6rem;
+
+                    .question-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-transform: capitalize;
+            
+                        h2 {
+                            @include h1-styling();
+                            font-size: 2.2rem;
+                            font-family: 'rotunda-regular';
+                        }
+                    }
+            
+                    .question-text {
+                        p {
+                            font-family: 'rotunda-light';
+                            font-size: 2rem;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }    
+
+    .other-categories {
+        .header-container {
+            gap: 7rem;
+
+            h4 {
+                font-size: 3.2rem;
+            }
+
+            .line {
+                width: 65vw;
+                height: 1px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    // Single procedure styling
+
+    .procedure-desc {
+
+        .img-container {
+            margin: 10rem 0;
+            width: 100vw; height: 50rem;
+
+            .stripe {
+                width: 4%;
+                top: 0; left: 25%;
+            }
+        }
+
+        .good-to-know {
+            h2.name {
+                margin: 10rem 0;
+                font-size: 3.4rem;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .wrapper {
+                width: 100vw;
+                gap: 2rem;
+
+                p {
+                    font-size: 1.6rem;
+                    padding: 3rem 0;
+                }
+            }
+        }
+
+        .recomendations {
+            margin-top: 10rem;
+
+            .text-container {
+                width: 80vw;
+                margin: 0 auto;
+
+                p {
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
+            }
+
+            .wrapper {
+                padding-top: 8rem;
+                padding-bottom: 4rem;
+                display: flex;
+                justify-content: center;
+
+                .column {
+                    margin-top: 6rem;
+                    width: 36vw;
+
+                    h1 {
+                        @include h1-styling();
+                        text-align: left;
+                        font-family: 'feliz';
+                        font-weight: 600;
+                        font-size: 3.2rem;
+                        margin-bottom: 6rem;
+                    }
+
+                    p {
+                        font-family: 'rotunda-light';
+                        font-size: 1.6rem;
+                        line-height: 150%;
+                        max-width: 26vw;
+                        text-align: left;
+                    }
+                }
+
+                .one {
+                    padding-right: 5rem;
+                    border-right: black solid 1px;
+                }
+
+                .two {
+                    padding-left: 5rem;
+                }
+            }
+
+            .button-container {  
+                .wrapper {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10rem;
+                    
+                    a {
+                        .button-regular {
+                            @include button-regular();
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq {
+            .wrapper {
+                max-width: 80vw;
+                margin: 10rem auto 20rem auto;
+
+                h1 {
+                    @include h1-styling();
+                    text-align: left;
+                    font-family: 'feliz';
+                    font-size: 5rem;
+                    margin-bottom: 4rem;
+                }
+
+                .question {
+                    margin-bottom: 4rem;
+                    border-bottom: 1px $black-paragraph solid;
+                    padding-bottom: 6rem;
+
+                    .question-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-transform: capitalize;
+            
+                        h2 {
+                            @include h1-styling();
+                            font-size: 2.2rem;
+                            font-family: 'rotunda-regular';
+                        }
+                    }
+            
+                    .question-text {
+                        p {
+                            font-family: 'rotunda-light';
+                            font-size: 2rem;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }    
+
+    .other-categories {
+        .header-container {
+            padding-top: 0;
+            padding-bottom: 7rem;
+            gap: 4rem;
+    
+            h4 {
+                font-size: 2.6rem;
+            }
+    
+            .line {
+                width: 55vw;
+                height: 1px;
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+
+    // Single procedure styling
+
+    .procedure-desc {
+
+        .img-container {
+            margin: 2rem 0;
+            width: 100vw; height: 53rem;
+
+            .stripe {
+                width: 10%;
+                top: 0; left: 15%;
+            }
+        }
+
+        .good-to-know {
+            h2.name {
+                margin: 7rem 0;
+                font-size: 3rem;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .wrapper {
+                width: 100vw;
+                gap: 1rem;
+                padding: 3rem 0;
+
+                p {
+                    font-size: 1.6rem;
+                    padding: 2rem 0;
+                }
+            }
+        }
+
+        .recomendations {
+            margin-top: 6rem;
+
+            .text-container {
+                width: 95vw;
+                margin: 0 auto;
+
+                p {
+                    font-size: 1.6rem;
+                    text-align: center;
+                }
+            }
+
+            .wrapper {
+                padding-top: 8rem;
+                padding-bottom: 4rem;
+                justify-content: center;
+                flex-direction: column;
+
+                .column {
+                    margin-top: 6rem;
+                    width: 92vw;
+
+                    h1 {
+                        @include h1-styling();
+                        text-align: center;
+                        font-family: 'feliz';
+                        font-weight: 600;
+                        font-size: 3rem;
+                        margin-bottom: 4rem;
+                    }
+
+                    p {
+                        font-family: 'rotunda-light';
+                        font-size: 1.5rem;
+                        line-height: 150%;
+                        max-width: 100vw;
+                        text-align: left;
+                        margin-left: 3rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .one {
+                    padding-right: 0;
+                    border-right: none;
+                }
+
+                .two {
+                    padding-left: 0;
+                }
+            }
+
+            .button-container {  
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 7rem;
+                    
+                    a {
+                        .button-regular {
+                            @include button-regular();
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq {
+            .wrapper {
+                max-width: 98vw;
+                margin: 10rem 2rem 14rem;
+
+                h1 {
+                    text-align: center;
+                    font-size: 4.5rem;
+                    margin-bottom: 4rem;
+                }
+
+                .question {
+                    margin-bottom: 4rem;
+                    border-bottom: 1px $black-paragraph solid;
+                    padding-bottom: 4rem;
+
+                    .question-title {
+                        h2 {
+                            font-size: 1.9rem;
+                            margin-bottom: 0.2rem;
+                        }
+                    }
+            
+                    .question-text {
+                        p {
+                            font-size: 1.8rem;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }    
+
+    .other-categories {
+        .header-container {
+            padding-bottom: 4rem;
+            gap: 4rem;
+            justify-content: center;
+    
+            h4 {
+                font-size: 2.8rem;
+            }
+    
+            .line {
+                display: none;
+            }
+        }
+    }
+}

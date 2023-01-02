@@ -1,0 +1,295 @@
+// Colors 
+
+$background: #F4F1EB;
+$pink: #DED4C9;
+$black-paragraph: rgb(47, 47, 47);
+
+// Mixins
+
+@mixin button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid $black-paragraph 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@mixin h1-styling {
+    font-family: 'feliz';
+    font-size: 4rem;
+    text-align: center;
+}
+
+// Piece of news styling
+
+.article {
+    padding-top: 5rem;
+
+    .banner {
+        .img-container {
+            height: 55vh; width: 100vw;
+
+            img {
+                width: 100%; height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .text-container {
+        width: 80vw;
+        display: block;
+        margin: 10rem auto;
+
+        h1 {
+            @include h1-styling();
+            font-family: 'feliz';
+        }
+
+        p {
+            color: $black-paragraph;
+            font-size: 1.8rem;
+            font-family: 'rotunda-light';
+            text-align: right;
+        }
+
+        p.text {
+            margin-top: 4rem;
+            text-align: justify;
+            line-height: 200%;
+            font-size: 2.2rem;
+        }
+    }
+
+    h1 {
+        @include h1-styling();
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10rem;
+        margin-top: 15rem;
+        padding-bottom: 15rem;
+
+        .piece-of-news {
+            max-width: 22vw;
+            .img-container {
+                width: 22vw; height: 20vw;
+    
+                img {
+                    height: 100%; width: 100%;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+
+            h2 {
+                margin-top: 8rem;
+                @include h1-styling();
+                font-family: 'feliz';
+                font-size: 6rem;
+            }
+
+            p {
+                margin-top: 4rem;
+                font-family: 'rotunda-light';
+                line-height: 170%;
+            }
+
+            .space-between {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }    
+}
+
+// Media queries
+
+@media (max-width: 1024px) {
+
+    // Piece of news styling
+
+    .article {
+        .banner {
+            .img-container {
+                height: 60vh;
+            }
+        }
+    
+        .text-container {
+            width: 84vw;
+            display: block;
+            margin: 10rem auto;
+    
+            h1 {
+                @include h1-styling();
+                font-family: 'feliz';
+            }
+    
+            p {
+                color: $black-paragraph;
+                font-size: 1.8rem;
+                font-family: 'rotunda-light';
+                text-align: right;
+            }
+    
+            p.text {
+                margin-top: 4rem;
+                text-align: justify;
+                line-height: 200%;
+                font-size: 2.2rem;
+            }
+
+            p.date {
+                margin-top: 2rem;
+            }
+        }
+    
+        h1 {
+            @include h1-styling();
+            text-align: center;
+        }
+    
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10rem;
+            margin-top: 15rem;
+            padding-bottom: 15rem;
+    
+            .piece-of-news {
+                max-width: 22vw;
+                .img-container {
+                    width: 22vw; height: 20vw;
+        
+                    img {
+                        height: 100%; width: 100%;
+                        display: block;
+                        object-fit: cover;
+                    }
+                }
+    
+                h2 {
+                    margin-top: 8rem;
+                    @include h1-styling();
+                    font-family: 'feliz';
+                    font-size: 6rem;
+                }
+    
+                p {
+                    margin-top: 4rem;
+                    font-family: 'rotunda-light';
+                    line-height: 170%;
+                }
+    
+                .space-between {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media (max-width: 599px) {
+
+    // Piece of news styling
+
+    .article {
+        .banner {
+            .img-container {
+                height: 70vh;
+            }
+        }
+    
+        .text-container {
+            width: 90vw;
+            display: block;
+            margin: 10rem auto;
+    
+            h1 {
+                font-size: 3rem;
+            }
+    
+            p {
+                font-size: 1.6rem;
+                text-align: right;
+            }
+    
+            p.text {
+                margin-top: 4rem;
+                text-align: justify;
+                line-height: 200%;
+                font-size: 1.6rem;
+            }
+
+            p.date {
+                margin-top: 2rem;
+            }
+        }
+    
+        h1 {
+            @include h1-styling();
+            text-align: center;
+        }
+    
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10rem;
+            margin-top: 15rem;
+            padding-bottom: 15rem;
+    
+            .piece-of-news {
+                max-width: 22vw;
+                .img-container {
+                    width: 22vw; height: 20vw;
+        
+                    img {
+                        height: 100%; width: 100%;
+                        display: block;
+                        object-fit: cover;
+                    }
+                }
+    
+                h2 {
+                    margin-top: 8rem;
+                    @include h1-styling();
+                    font-family: 'feliz';
+                    font-size: 6rem;
+                }
+    
+                p {
+                    margin-top: 4rem;
+                    font-family: 'rotunda-light';
+                    line-height: 170%;
+                }
+    
+                .space-between {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }    
+    }
+}

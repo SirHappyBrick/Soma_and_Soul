@@ -1,0 +1,391 @@
+// Colors 
+
+$background: #F4F1EB;
+$pink: #DED4C9;
+$black-paragraph: rgb(47, 47, 47);
+
+// Mixins
+
+@mixin button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid $black-paragraph 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@mixin h1-styling {
+    font-family: 'feliz';
+    font-size: 4rem;
+    text-align: center;
+}
+
+// Contact styling
+
+.contact {
+    .img-container {
+        margin-top: 8rem;
+        width: 100vw; height: 70rem;
+
+        img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .wrapper {
+        padding-top: 20rem;
+        padding-bottom: 10rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 25rem;
+
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .text-container {
+                p {
+                    font-family: 'rotunda-light';
+                    font-size: 2.1rem;
+                }
+
+                p.bold {
+                    font-family: 'rotunda-regular';
+                }
+
+                .m1 {
+                    margin-top: 10rem;
+                }
+
+                .m2 {
+                    margin-top: 3rem;
+                }
+            }
+
+            .img-container {
+                margin-top: 12rem;
+                width: 80rem; height: 55rem;
+                position: relative;
+
+                img {
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                }
+
+                .stripe {
+                    background-color: $background;
+                    height: 100%;
+                    width: 15%;
+    
+                    position: absolute;
+                    top: 0; left: 15%;
+                }
+            }
+        }
+
+        .right-container {
+
+            h2 {
+                @include h1-styling();
+                font-size: 4.5rem;
+            }
+    
+            .inputs {
+                margin-top: 12rem;
+                display: flex;
+                flex-direction: column;
+                width: 32vw;
+                
+                input {
+                    border: solid $black-paragraph 1px;
+                    border-radius: 25px;
+                    padding: 1.5rem 4rem;
+                    margin-top: 3.5rem;
+                    text-transform: none;
+                }
+    
+                textarea {
+                    border: solid $black-paragraph 1px;
+                    border-radius: 25px;
+                    height: 40rem;
+                    padding: 2.6rem 4rem;
+                    margin-top: 3.5rem;
+                    text-transform: none;
+                }
+    
+                button {
+                    @include button-regular();
+                    padding: 2rem 7rem;
+                    margin: 7rem auto 0 auto;
+                }
+            }
+        }
+    }
+}
+
+// Mecia queries
+
+@media (max-width: 1499px) {
+
+    // Contact styling
+
+    .contact {
+        .img-container {
+            margin-top: 8rem;
+            width: 100vw; height: 55rem;
+        }
+
+        .wrapper {
+            padding-top: 16rem;
+            padding-bottom: 8rem;
+            gap: 12rem;
+
+            .left-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .text-container {
+                    p {
+                        font-family: 'rotunda-light';
+                        font-size: 1.8rem;
+                    }
+
+                    p.bold {
+                        font-family: 'rotunda-regular';
+                    }
+
+                    .m1 {
+                        margin-top: 8rem;
+                    }
+
+                    .m2 {
+                        margin-top: 3rem;
+                    }
+                }
+
+                .img-container {
+                    margin-top: 12rem;
+                    width: 60rem; height: 44rem;
+
+                    .stripe {
+                        width: 15%;
+                        top: 0; left: 15%;
+                    }
+                }
+            }
+
+            .right-container {
+
+                h2 {
+                    font-size: 4.2rem;
+                }
+        
+                .inputs {
+                    margin-top: 8rem;
+                    display: flex;
+                    flex-direction: column;
+                    width: 38vw;
+                    
+                    input {
+                        border: solid $black-paragraph 1px;
+                        border-radius: 25px;
+                        padding: 1.5rem 4rem;
+                        margin-top: 3rem;
+                        text-transform: none;
+                        // font-size: 1.5rem;
+                    }
+        
+                    textarea {
+                        border: solid $black-paragraph 1px;
+                        border-radius: 25px;
+                        height: 34rem;
+                        padding: 2.6rem 4rem;
+                        margin-top: 3rem;
+                        text-transform: none;
+                        // font-size: 1.5rem;
+                    }
+        
+                    button {
+                        padding: 2rem 7rem;
+                        margin: 7rem auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    // Contact styling
+
+    .contact {
+        .img-container {
+            margin-top: 8rem;
+            width: 100vw; height: 45rem;
+        }
+
+        .wrapper {
+            flex-direction: column-reverse;
+            padding-top: 14rem;
+            padding-bottom: 6rem;
+            gap: 12rem;
+
+            .left-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .text-container {
+                    p {
+                        font-size: 1.8rem;
+                    }
+
+                    .m1 {
+                        margin-top: 8rem;
+                    }
+
+                    .m2 {
+                        margin-top: 3rem;
+                    }
+                }
+
+                .img-container {
+                    margin-top: 12rem;
+                    width: 100vw; height: 44rem;
+
+                    .stripe {
+                        width: 15%;
+                        top: 0; left: 15%;
+                    }
+                }
+            }
+
+            .right-container {
+                h2 {
+                    font-size: 4.2rem;
+                }
+        
+                .inputs {
+                    margin: 0 auto;
+                    margin-top: 8rem;
+                    width: 72vw;
+                    
+                    input {
+                        border: solid $black-paragraph 1px;
+                        border-radius: 25px;
+                        padding: 1.5rem 4rem;
+                        margin-top: 3rem;
+                        text-transform: none;
+                        // font-size: 1.5rem;
+                    }
+        
+                    textarea {
+                        border: solid $black-paragraph 1px;
+                        border-radius: 25px;
+                        height: 34rem;
+                        padding: 2.6rem 4rem;
+                        margin-top: 3rem;
+                        text-transform: none;
+                        // font-size: 1.5rem;
+                    }
+        
+                    button {
+                        padding: 2rem 7rem;
+                        margin: 7rem auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+
+    // Contact styling
+
+    .contact {
+        .img-container {
+            margin-top: 4rem;
+            width: 100vw; height: 50rem;
+        }
+
+        .wrapper {
+            flex-direction: column-reverse;
+            padding-top: 4rem;
+            padding-bottom: 0;
+            gap: 12rem;
+
+            .left-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .text-container {
+                    p {
+                        font-size: 1.6rem;
+                    }
+
+                    .m1 {
+                        margin-top: 5rem;
+                    }
+
+                    .m2 {
+                        margin-top: 3rem;
+                    }
+                }
+
+                .img-container {
+                    margin-top: 6rem;
+                    width: 100vw; height: 44rem;
+
+                    .stripe {
+                        width: 15%;
+                        top: 0; left: 15%;
+                    }
+                }
+            }
+
+            .right-container {
+                h2 {
+                    font-size: 2.8rem;
+                }
+        
+                .inputs {
+                    margin: 0 auto;
+                    margin-top: 4rem;
+                    width: 92vw;
+                    
+                    input {
+                        border: solid $black-paragraph 1px;
+                        border-radius: 25px;
+                        padding: 1.4rem 3.2rem;
+                        margin-top: 3rem;
+                        text-transform: none;
+                        // font-size: 1.5rem;
+                    }
+        
+                    textarea {
+                        border: solid $black-paragraph 1px;
+                        border-radius: 25px;
+                        height: 30rem;
+                        padding: 2.6rem 3.2rem;
+                        margin-top: 3rem;
+                        text-transform: none;
+                        // font-size: 1.5rem;
+                    }
+        
+                    button {
+                        padding: 2rem 7rem;
+                        margin: 7rem auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

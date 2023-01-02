@@ -1,0 +1,644 @@
+.banner .container {
+  height: 84vh;
+  width: 100vw;
+  background-image: url(../images/index/baner_1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.banner .container .text-container {
+  margin-right: 24rem;
+}
+.banner .container .text-container h2 {
+  font-size: 6.4rem;
+  color: white;
+  font-family: "feliz";
+}
+.banner .container .text-container p {
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  color: white;
+  line-height: 1.2;
+  font-family: "rotunda";
+}
+
+.select-category {
+  background-color: #F4F1EB;
+}
+.select-category .container-one {
+  padding-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.select-category .container-one .signet-container {
+  width: 8rem;
+}
+.select-category .container-one .signet-container img {
+  width: 100%;
+}
+.select-category .container-one .text-container {
+  width: 36%;
+}
+.select-category .container-one .text-container p {
+  margin-top: 6rem;
+  font-size: 1.9rem;
+  text-align: center;
+  color: rgb(47, 47, 47);
+  font-family: "rotunda-light";
+}
+.select-category h1 {
+  margin-top: 10rem;
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+}
+.select-category .imgs-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.select-category .imgs-container .img-desc-wrapper {
+  margin-top: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-category .imgs-container .img-desc-wrapper .img-container {
+  width: 26vw;
+  height: 72rem;
+  position: relative;
+}
+.select-category .imgs-container .img-desc-wrapper .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.select-category .imgs-container .img-desc-wrapper .img-container .img2:hover {
+  opacity: 0;
+}
+.select-category .imgs-container .img-desc-wrapper p {
+  margin-top: 6rem;
+  font-family: "feliz";
+  font-size: 2.4rem;
+  text-align: center;
+}
+.select-category a .button-regular {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(47, 47, 47) 1px;
+  padding: 2rem 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 10rem;
+}
+
+.soma-and-soul {
+  background-color: #F4F1EB;
+  padding-top: 14rem;
+}
+.soma-and-soul .img-container {
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+}
+.soma-and-soul .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.soma-and-soul .img-container .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.soma-and-soul .img-container .text-container .container-one {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.soma-and-soul .img-container .text-container .container-one .small-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.soma-and-soul .img-container .text-container .container-one .small-container p {
+  color: white;
+  font-size: 2rem;
+  font-family: "rotunda-light";
+}
+.soma-and-soul .img-container .text-container .container-one .small-container p.name {
+  font-family: "feliz";
+  font-size: 3rem;
+}
+.soma-and-soul .img-container .text-container .container-three {
+  margin-top: 4rem;
+}
+.soma-and-soul .img-container .text-container .container-three p {
+  font-size: 2.4rem;
+  font-family: "feliz";
+  color: white;
+}
+
+.buy-voucher {
+  background-color: #F4F1EB;
+}
+.buy-voucher .header-section {
+  width: 40%;
+  margin: 0 auto;
+}
+.buy-voucher .header-section h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 14rem;
+}
+.buy-voucher .header-section p {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "rotunda-light";
+}
+.buy-voucher .buy-voucher-section {
+  height: 64vh;
+  width: 100vw;
+  background-image: url(../images/index/5.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14rem;
+}
+.buy-voucher .buy-voucher-section .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 28%;
+  margin-right: 22rem;
+}
+.buy-voucher .buy-voucher-section .text-container h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.1;
+  font-size: 6rem;
+  text-align: left;
+}
+.buy-voucher .buy-voucher-section .text-container p {
+  margin-top: 4rem;
+  color: rgb(47, 47, 47);
+  font-size: 1.8rem;
+  font-family: "rotunda-light";
+}
+.buy-voucher .buy-voucher-section .text-container .button-regular {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(47, 47, 47) 1px;
+  padding: 2rem 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 8rem;
+}
+
+.instagram-section {
+  background-color: #F4F1EB;
+}
+.instagram-section h1 {
+  padding-top: 10rem;
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+}
+.instagram-section .imgs-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.instagram-section .imgs-container .img-desc-wrapper {
+  margin-top: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.instagram-section .imgs-container .img-desc-wrapper .img-container {
+  width: 26vw;
+  height: 26vw;
+  position: relative;
+}
+.instagram-section .imgs-container .img-desc-wrapper .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.instagram-section .imgs-container .img-desc-wrapper .img-container .img2:hover {
+  opacity: 0;
+}
+.instagram-section .imgs-container .img-desc-wrapper p {
+  margin-top: 6rem;
+  font-family: "feliz";
+  font-size: 2.4rem;
+  text-align: center;
+}
+.instagram-section a .button-regular {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(47, 47, 47) 1px;
+  padding: 2rem 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 10rem;
+}
+
+.ad-banner {
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+}
+.ad-banner .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 2rem;
+}
+.ad-banner .wrapper .img-container {
+  width: 20rem;
+  height: 15rem;
+}
+.ad-banner .wrapper .img-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto 0;
+}
+
+@media (max-width: 1499px) {
+  .banner .container .text-container {
+    margin-right: 12rem;
+  }
+  .banner .container .text-container h2 {
+    font-size: 4.2rem;
+  }
+  .banner .container .text-container p {
+    font-size: 1.8rem;
+  }
+  .select-category {
+    background-color: #F4F1EB;
+  }
+  .select-category .container-one {
+    padding-top: 14rem;
+  }
+  .select-category .container-one .signet-container {
+    width: 8rem;
+  }
+  .select-category .container-one .text-container {
+    width: 36%;
+  }
+  .select-category .container-one .text-container p {
+    margin-top: 6rem;
+    font-size: 1.9rem;
+  }
+  .select-category h1 {
+    margin-top: 10rem;
+    font-size: 4rem;
+  }
+  .select-category .imgs-container {
+    gap: 5rem;
+  }
+  .select-category .imgs-container .img-desc-wrapper {
+    margin-top: 11rem;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container {
+    width: 26vw;
+    height: 50rem;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container .img2:hover {
+    opacity: 0;
+  }
+  .select-category .imgs-container .img-desc-wrapper p {
+    margin-top: 6rem;
+    font-size: 2.4rem;
+  }
+  .buy-voucher .header-section {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .buy-voucher .header-section h2 {
+    padding-top: 14rem;
+  }
+  .buy-voucher .header-section p {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "rotunda-light";
+  }
+  .buy-voucher .buy-voucher-section {
+    height: 68vh;
+    width: 100vw;
+    margin-top: 14rem;
+  }
+  .buy-voucher .buy-voucher-section .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 36%;
+    margin-right: 16rem;
+  }
+  .buy-voucher .buy-voucher-section .text-container h2 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    font-size: 6rem;
+    text-align: left;
+  }
+  .buy-voucher .buy-voucher-section .text-container p {
+    margin-top: 4rem;
+    color: rgb(47, 47, 47);
+    font-size: 1.8rem;
+    font-family: "rotunda-light";
+  }
+  .buy-voucher .buy-voucher-section .text-container .button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(47, 47, 47) 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .banner .container .text-container {
+    margin-right: 2rem;
+  }
+  .banner .container .text-container h2 {
+    font-size: 4rem;
+  }
+  .banner .container .text-container p {
+    font-size: 2rem;
+  }
+  .select-category .container-one {
+    padding-top: 12rem;
+  }
+  .select-category .container-one .signet-container {
+    width: 8rem;
+  }
+  .select-category .container-one .text-container {
+    width: 66%;
+  }
+  .select-category .container-one .text-container p {
+    margin-top: 6rem;
+    font-size: 1.9rem;
+  }
+  .select-category h1 {
+    margin-top: 10rem;
+    font-size: 4rem;
+  }
+  .select-category .imgs-container {
+    gap: 3rem;
+  }
+  .select-category .imgs-container .img-desc-wrapper {
+    margin-top: 11rem;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container {
+    width: 26vw;
+    height: 33rem;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container .img2:hover {
+    opacity: 0;
+  }
+  .select-category .imgs-container .img-desc-wrapper p {
+    margin-top: 6rem;
+    font-size: 2.4rem;
+  }
+  .buy-voucher .header-section {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .buy-voucher .header-section h2 {
+    padding-top: 14rem;
+  }
+  .buy-voucher .header-section p {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: "rotunda-light";
+  }
+  .buy-voucher .buy-voucher-section {
+    height: 68vh;
+    width: 100vw;
+    margin-top: 14rem;
+    background-position: right;
+    justify-content: center;
+  }
+  .buy-voucher .buy-voucher-section .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-right: 0rem;
+  }
+  .buy-voucher .buy-voucher-section .text-container h2 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    font-size: 6rem;
+    text-align: left;
+  }
+  .buy-voucher .buy-voucher-section .text-container p {
+    margin-top: 4rem;
+    color: rgb(47, 47, 47);
+    font-size: 1.8rem;
+    font-family: "rotunda-light";
+  }
+  .buy-voucher .buy-voucher-section .text-container .button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(47, 47, 47) 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 599px) {
+  .banner .container {
+    justify-content: center;
+  }
+  .banner .container .text-container {
+    margin-right: 0;
+    text-align: center;
+  }
+  .banner .container .text-container h2 {
+    font-size: 3.2rem;
+  }
+  .banner .container .text-container p {
+    font-size: 1.6rem;
+  }
+  .select-category .container-one {
+    padding-top: 12rem;
+  }
+  .select-category .container-one .signet-container {
+    width: 8rem;
+  }
+  .select-category .container-one .text-container {
+    width: 88%;
+  }
+  .select-category .container-one .text-container p {
+    margin-top: 6rem;
+    text-align: left;
+    font-size: 1.6rem;
+  }
+  .select-category h1 {
+    margin-top: 10rem;
+    font-size: 3.4rem;
+  }
+  .select-category .imgs-container {
+    gap: 4rem;
+    flex-direction: column;
+  }
+  .select-category .imgs-container .img-desc-wrapper {
+    margin-top: 4rem;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container {
+    width: 100vw;
+    height: 33rem;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .select-category .imgs-container .img-desc-wrapper .img-container .img2:hover {
+    opacity: 0;
+  }
+  .select-category .imgs-container .img-desc-wrapper p {
+    margin-top: 2rem;
+    font-size: 2.8rem;
+  }
+  .buy-voucher .header-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .buy-voucher .header-section h2 {
+    font-size: 3.4rem;
+    padding-top: 10rem;
+  }
+  .buy-voucher .header-section p {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .buy-voucher .buy-voucher-section {
+    height: 78vh;
+    width: 100vw;
+    margin-top: 10rem;
+    background-position: right;
+    justify-content: center;
+  }
+  .buy-voucher .buy-voucher-section .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-right: 0rem;
+  }
+  .buy-voucher .buy-voucher-section .text-container h2 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    font-size: 3.4rem;
+    text-align: left;
+  }
+  .buy-voucher .buy-voucher-section .text-container p {
+    margin-top: 4rem;
+    color: rgb(47, 47, 47);
+    font-size: 1.6rem;
+    font-family: "rotunda-light";
+  }
+  .buy-voucher .buy-voucher-section .text-container .button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(47, 47, 47) 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 8rem;
+  }
+  .instagram-section h1 {
+    padding-top: 10rem;
+    font-family: "feliz";
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .instagram-section .imgs-container {
+    margin-top: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .instagram-section .imgs-container .img-desc-wrapper {
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+  .instagram-section .imgs-container .img-desc-wrapper .img-container {
+    width: 100vw;
+    height: 50vh;
+  }
+  .instagram-section .imgs-container .img-desc-wrapper p {
+    margin-top: 6rem;
+    font-size: 2.4rem;
+  }
+  .instagram-section a .button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(47, 47, 47) 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 5rem;
+  }
+}/*# sourceMappingURL=index.css.map */

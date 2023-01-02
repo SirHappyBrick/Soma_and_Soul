@@ -1,0 +1,364 @@
+.procedure-description {
+  background-color: #F4F1EB;
+  padding-top: 10rem;
+}
+.procedure-description .procedures-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20rem;
+}
+.procedure-description .procedures-wrapper .img-container {
+  width: 48%;
+  height: 100rem;
+  position: relative;
+}
+.procedure-description .procedures-wrapper .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.procedure-description .procedures-wrapper .img-container .stripe {
+  background-color: #F4F1EB;
+  height: 100%;
+  width: 5%;
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+.procedure-description .procedures-wrapper .text-container {
+  width: 60rem;
+}
+.procedure-description .procedures-wrapper .text-container h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  text-align: left;
+  font-size: 5.2rem;
+}
+.procedure-description .procedures-wrapper .text-container p {
+  margin-top: 8rem;
+  font-size: 2rem;
+  text-align: justify;
+  font-family: "rotunda-light";
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container {
+  margin-top: 6rem;
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container {
+  cursor: pointer;
+  margin-top: 3rem;
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow h4 {
+  font-size: 4rem;
+  font-family: "feliz";
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow i {
+  font-size: 2rem;
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow .rotate {
+  transform: rotate(180deg);
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .procedures {
+  display: flex;
+  flex-direction: column;
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .procedures a {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  font-family: "rotunda-light";
+}
+.procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .display {
+  display: none;
+}
+
+.contact {
+  background-color: #F4F1EB;
+  padding-top: 10rem;
+}
+.contact .text-container {
+  width: 50vw;
+  margin: 0 auto;
+}
+.contact .text-container h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+}
+.contact .text-container p {
+  margin-top: 5rem;
+  font-size: 2rem;
+  font-family: "rotunda-light";
+  text-align: center;
+}
+.contact .text-container .button-regular {
+  margin-top: 4rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(47, 47, 47) 1px;
+  padding: 2rem 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "rotunda-light";
+}
+
+.other-categories {
+  background-color: #F4F1EB;
+}
+.other-categories .header-container {
+  padding-top: 16rem;
+  padding-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10rem;
+}
+.other-categories .header-container h4 {
+  font-size: 3.2rem;
+  font-family: "feliz";
+}
+.other-categories .header-container .line {
+  width: 70vw;
+  height: 1px;
+  background-color: rgb(47, 47, 47);
+}
+
+@media (max-width: 1499px) {
+  .procedure-description {
+    padding-top: 10rem;
+  }
+  .procedure-description .procedures-wrapper {
+    gap: 10rem;
+  }
+  .procedure-description .procedures-wrapper .img-container {
+    width: 48%;
+    height: 72rem;
+  }
+  .procedure-description .procedures-wrapper .img-container .stripe {
+    top: 0;
+    left: 15%;
+  }
+  .procedure-description .procedures-wrapper .text-container {
+    width: 54rem;
+  }
+  .procedure-description .procedures-wrapper .text-container h2 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    text-align: left;
+    font-size: 4.2rem;
+  }
+  .procedure-description .procedures-wrapper .text-container p {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container {
+    margin-top: 4rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container {
+    margin-top: 3rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow h4 {
+    font-size: 3rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow i {
+    font-size: 1.6rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow .rotate {
+    transform: rotate(180deg);
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .procedures a {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .other-categories .header-container {
+    padding-top: 14rem;
+    padding-bottom: 7rem;
+    gap: 7rem;
+  }
+  .other-categories .header-container h4 {
+    font-size: 3.2rem;
+  }
+  .other-categories .header-container .line {
+    width: 65vw;
+    height: 1px;
+  }
+}
+@media (max-width: 1024px) {
+  .procedure-description {
+    padding-top: 10rem;
+  }
+  .procedure-description .procedures-wrapper {
+    flex-direction: column-reverse;
+    gap: 10rem;
+  }
+  .procedure-description .procedures-wrapper .img-container {
+    width: 100%;
+    height: 72rem;
+  }
+  .procedure-description .procedures-wrapper .img-container .stripe {
+    top: 0;
+    left: 15%;
+  }
+  .procedure-description .procedures-wrapper .text-container {
+    margin: 0 auto;
+    width: 90vw;
+  }
+  .procedure-description .procedures-wrapper .text-container h2 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    text-align: left;
+    font-size: 4.2rem;
+  }
+  .procedure-description .procedures-wrapper .text-container p {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container {
+    margin-top: 4rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container {
+    margin-top: 3rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow h4 {
+    font-size: 3rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow i {
+    font-size: 1.6rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow .rotate {
+    transform: rotate(180deg);
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .procedures a {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .contact {
+    padding-top: 10rem;
+  }
+  .contact .text-container {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .contact .text-container h2 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+  }
+  .contact .text-container p {
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-family: "rotunda-light";
+    text-align: center;
+  }
+  .contact .text-container .button-regular {
+    margin-top: 4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(47, 47, 47) 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "rotunda-light";
+  }
+  .other-categories .header-container {
+    padding-top: 14rem;
+    padding-bottom: 7rem;
+    gap: 4rem;
+  }
+  .other-categories .header-container h4 {
+    font-size: 2.6rem;
+  }
+  .other-categories .header-container .line {
+    width: 55vw;
+    height: 1px;
+  }
+}
+@media (max-width: 599px) {
+  .procedure-description {
+    padding-top: 5rem;
+  }
+  .procedure-description .procedures-wrapper {
+    flex-direction: column-reverse;
+    gap: 6rem;
+  }
+  .procedure-description .procedures-wrapper .img-container {
+    width: 100%;
+    height: 55rem;
+  }
+  .procedure-description .procedures-wrapper .img-container .stripe {
+    top: 0;
+    left: 15%;
+  }
+  .procedure-description .procedures-wrapper .text-container {
+    margin: 0 auto;
+    width: 90vw;
+  }
+  .procedure-description .procedures-wrapper .text-container h2 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    text-align: left;
+    font-size: 3.5rem;
+  }
+  .procedure-description .procedures-wrapper .text-container p {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container {
+    margin-top: 4rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container {
+    margin-top: 3rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow h4 {
+    font-size: 2.8rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow i {
+    font-size: 1.6rem;
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .header-and-arrow .rotate {
+    transform: rotate(180deg);
+  }
+  .procedure-description .procedures-wrapper .text-container .procedures-container .single-procedure-container .procedures a {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .contact {
+    padding-top: 7rem;
+  }
+  .contact .text-container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .contact .text-container h2 {
+    font-size: 3.2rem;
+  }
+  .contact .text-container p {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+  .contact .text-container .button-regular {
+    margin-top: 5rem;
+  }
+  .other-categories .header-container {
+    padding-top: 12rem;
+    padding-bottom: 4rem;
+    gap: 4rem;
+    justify-content: center;
+  }
+  .other-categories .header-container h4 {
+    font-size: 2.8rem;
+  }
+  .other-categories .header-container .line {
+    display: none;
+  }
+}/*# sourceMappingURL=zabiegi.css.map */

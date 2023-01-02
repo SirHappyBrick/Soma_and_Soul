@@ -1,0 +1,291 @@
+.contact .img-container {
+  margin-top: 8rem;
+  width: 100vw;
+  height: 70rem;
+}
+.contact .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact .wrapper {
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25rem;
+}
+.contact .wrapper .left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.contact .wrapper .left-container .text-container p {
+  font-family: "rotunda-light";
+  font-size: 2.1rem;
+}
+.contact .wrapper .left-container .text-container p.bold {
+  font-family: "rotunda-regular";
+}
+.contact .wrapper .left-container .text-container .m1 {
+  margin-top: 10rem;
+}
+.contact .wrapper .left-container .text-container .m2 {
+  margin-top: 3rem;
+}
+.contact .wrapper .left-container .img-container {
+  margin-top: 12rem;
+  width: 80rem;
+  height: 55rem;
+  position: relative;
+}
+.contact .wrapper .left-container .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact .wrapper .left-container .img-container .stripe {
+  background-color: #F4F1EB;
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+.contact .wrapper .right-container h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  font-size: 4.5rem;
+}
+.contact .wrapper .right-container .inputs {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  width: 32vw;
+}
+.contact .wrapper .right-container .inputs input {
+  border: solid rgb(47, 47, 47) 1px;
+  border-radius: 25px;
+  padding: 1.5rem 4rem;
+  margin-top: 3.5rem;
+  text-transform: none;
+}
+.contact .wrapper .right-container .inputs textarea {
+  border: solid rgb(47, 47, 47) 1px;
+  border-radius: 25px;
+  height: 40rem;
+  padding: 2.6rem 4rem;
+  margin-top: 3.5rem;
+  text-transform: none;
+}
+.contact .wrapper .right-container .inputs button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(47, 47, 47) 1px;
+  padding: 2rem 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2rem 7rem;
+  margin: 7rem auto 0 auto;
+}
+
+@media (max-width: 1499px) {
+  .contact .img-container {
+    margin-top: 8rem;
+    width: 100vw;
+    height: 55rem;
+  }
+  .contact .wrapper {
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+    gap: 12rem;
+  }
+  .contact .wrapper .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .contact .wrapper .left-container .text-container p {
+    font-family: "rotunda-light";
+    font-size: 1.8rem;
+  }
+  .contact .wrapper .left-container .text-container p.bold {
+    font-family: "rotunda-regular";
+  }
+  .contact .wrapper .left-container .text-container .m1 {
+    margin-top: 8rem;
+  }
+  .contact .wrapper .left-container .text-container .m2 {
+    margin-top: 3rem;
+  }
+  .contact .wrapper .left-container .img-container {
+    margin-top: 12rem;
+    width: 60rem;
+    height: 44rem;
+  }
+  .contact .wrapper .left-container .img-container .stripe {
+    width: 15%;
+    top: 0;
+    left: 15%;
+  }
+  .contact .wrapper .right-container h2 {
+    font-size: 4.2rem;
+  }
+  .contact .wrapper .right-container .inputs {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+  }
+  .contact .wrapper .right-container .inputs input {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    padding: 1.5rem 4rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .contact .wrapper .right-container .inputs textarea {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    height: 34rem;
+    padding: 2.6rem 4rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .contact .wrapper .right-container .inputs button {
+    padding: 2rem 7rem;
+    margin: 7rem auto 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .contact .img-container {
+    margin-top: 8rem;
+    width: 100vw;
+    height: 45rem;
+  }
+  .contact .wrapper {
+    flex-direction: column-reverse;
+    padding-top: 14rem;
+    padding-bottom: 6rem;
+    gap: 12rem;
+  }
+  .contact .wrapper .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .wrapper .left-container .text-container p {
+    font-size: 1.8rem;
+  }
+  .contact .wrapper .left-container .text-container .m1 {
+    margin-top: 8rem;
+  }
+  .contact .wrapper .left-container .text-container .m2 {
+    margin-top: 3rem;
+  }
+  .contact .wrapper .left-container .img-container {
+    margin-top: 12rem;
+    width: 100vw;
+    height: 44rem;
+  }
+  .contact .wrapper .left-container .img-container .stripe {
+    width: 15%;
+    top: 0;
+    left: 15%;
+  }
+  .contact .wrapper .right-container h2 {
+    font-size: 4.2rem;
+  }
+  .contact .wrapper .right-container .inputs {
+    margin: 0 auto;
+    margin-top: 8rem;
+    width: 72vw;
+  }
+  .contact .wrapper .right-container .inputs input {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    padding: 1.5rem 4rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .contact .wrapper .right-container .inputs textarea {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    height: 34rem;
+    padding: 2.6rem 4rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .contact .wrapper .right-container .inputs button {
+    padding: 2rem 7rem;
+    margin: 7rem auto 0 auto;
+  }
+}
+@media (max-width: 599px) {
+  .contact .img-container {
+    margin-top: 4rem;
+    width: 100vw;
+    height: 50rem;
+  }
+  .contact .wrapper {
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+    padding-bottom: 0;
+    gap: 12rem;
+  }
+  .contact .wrapper .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .wrapper .left-container .text-container p {
+    font-size: 1.6rem;
+  }
+  .contact .wrapper .left-container .text-container .m1 {
+    margin-top: 5rem;
+  }
+  .contact .wrapper .left-container .text-container .m2 {
+    margin-top: 3rem;
+  }
+  .contact .wrapper .left-container .img-container {
+    margin-top: 6rem;
+    width: 100vw;
+    height: 44rem;
+  }
+  .contact .wrapper .left-container .img-container .stripe {
+    width: 15%;
+    top: 0;
+    left: 15%;
+  }
+  .contact .wrapper .right-container h2 {
+    font-size: 2.8rem;
+  }
+  .contact .wrapper .right-container .inputs {
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 92vw;
+  }
+  .contact .wrapper .right-container .inputs input {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    padding: 1.4rem 3.2rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .contact .wrapper .right-container .inputs textarea {
+    border: solid rgb(47, 47, 47) 1px;
+    border-radius: 25px;
+    height: 30rem;
+    padding: 2.6rem 3.2rem;
+    margin-top: 3rem;
+    text-transform: none;
+  }
+  .contact .wrapper .right-container .inputs button {
+    padding: 2rem 7rem;
+    margin: 7rem auto 0 auto;
+  }
+}/*# sourceMappingURL=contact.css.map */

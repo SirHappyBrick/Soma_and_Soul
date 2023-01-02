@@ -1,0 +1,267 @@
+.price-list {
+  background-color: #F4F1EB;
+  padding-bottom: 10rem;
+}
+.price-list .price-list-container {
+  max-width: 75vw;
+  margin: 0 auto;
+  /* hide text */
+}
+.price-list .price-list-container h1 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  text-align: center;
+  font-family: "feliz";
+  font-size: 6rem;
+  padding: 12rem 0 10rem;
+}
+.price-list .price-list-container .question {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+.price-list .price-list-container .question .question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+.price-list .price-list-container .question .question-title h2 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  font-family: "feliz";
+  cursor: pointer;
+}
+.price-list .price-list-container .question .question-title .question-btn {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: black;
+}
+.price-list .price-list-container .question .question-title .question-btn .arrow i {
+  color: rgb(47, 47, 47);
+}
+.price-list .price-list-container .question .question-title .rotate {
+  transform: rotate(180deg);
+}
+.price-list .price-list-container .question .question-text .category {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 6rem;
+}
+.price-list .price-list-container .question .question-text .category .one {
+  max-width: 22.6rem;
+  min-width: 22.6rem;
+}
+.price-list .price-list-container .question .question-text .category .one a {
+  font-family: "rotunda-light";
+  font-size: 2.2rem;
+  color: rgb(47, 47, 47);
+}
+.price-list .price-list-container .question .question-text .category .two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.8rem;
+}
+.price-list .price-list-container .question .question-text .category .two .p-container {
+  display: flex;
+  justify-content: space-between;
+}
+.price-list .price-list-container .question .question-text .category .two .p-container p {
+  font-size: 2rem;
+  color: rgb(47, 47, 47);
+  font-family: "rotunda-light";
+  min-width: 8rem;
+}
+.price-list .price-list-container .question .question-text .category .two .p-container .procedure {
+  min-width: 40rem;
+}
+.price-list .price-list-container .question .question-text .category .two .p-container .package {
+  margin-left: 24rem;
+}
+.price-list .price-list-container .question .question-text .category .two .p-container .price {
+  margin-left: 16rem;
+  font-family: "rotunda-regular";
+}
+.price-list .price-list-container .question .question-text .category .two .mobile-show {
+  display: none;
+}
+.price-list .price-list-container .question-text {
+  display: none;
+}
+.price-list .price-list-container .show-text .question-text {
+  display: block;
+}
+.price-list .price-list-container .minus-icon {
+  display: none;
+}
+.price-list .price-list-container .show-text .minus-icon {
+  display: inline;
+}
+.price-list .price-list-container .show-text .plus-icon {
+  display: none;
+}
+.price-list .price-list-container .select-category {
+  margin: 20rem 0;
+}
+
+@media (max-width: 1499px) {
+  .price-list .price-list-container {
+    max-width: 85vw;
+  }
+  .price-list .price-list-container h1 {
+    font-size: 6rem;
+    margin: 12rem 0 10rem;
+  }
+  .price-list .price-list-container .question {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+  }
+  .price-list .price-list-container .question .question-title {
+    padding-bottom: 1rem;
+  }
+  .price-list .price-list-container .question .question-title h2 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    text-align: left;
+  }
+  .price-list .price-list-container .question .question-title .question-btn {
+    font-size: 2rem;
+  }
+  .price-list .price-list-container .question .question-text .category {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    gap: 4rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .hr {
+    width: 10rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container {
+    display: flex;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container p {
+    font-size: 1.8rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container .procedure {
+    min-width: 40rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container .package {
+    margin-left: 12rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container .price {
+    margin-left: 6rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .mobile-show {
+    display: none;
+  }
+  .price-list .price-list-container .select-category {
+    margin: 20rem 0;
+  }
+}
+@media (max-width: 1024px) {
+  .price-list .price-list-container .question .question-text .category .one {
+    min-width: 12.6rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .mobile-show {
+    display: flex;
+  }
+  .price-list .price-list-container .question .question-text .category .two .mobile-hide {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .price-list .price-list-container {
+    max-width: 95vw;
+    /* hide text */
+  }
+  .price-list .price-list-container h1 {
+    font-size: 5rem;
+    margin: 12rem 0 10rem;
+  }
+  .price-list .price-list-container .question {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+  }
+  .price-list .price-list-container .question .question-title {
+    padding-bottom: 1rem;
+  }
+  .price-list .price-list-container .question .question-title h2 {
+    font-size: 3.5rem;
+  }
+  .price-list .price-list-container .question .question-title .question-btn .arrow i {
+    font-size: 1.6rem;
+  }
+  .price-list .price-list-container .question .question-text .category {
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    gap: 2rem;
+  }
+  .price-list .price-list-container .question .question-text .category .one {
+    max-width: 100vw;
+  }
+  .price-list .price-list-container .question .question-text .category .one a {
+    font-size: 1.8rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .hr {
+    width: 10rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container {
+    display: flex;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container p {
+    font-size: 1.6rem;
+    max-width: 25vw;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container .procedure {
+    min-width: 54vw;
+    max-width: 54vw;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container .package {
+    margin-left: 0.5rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .p-container .price {
+    margin-left: 3rem;
+  }
+  .price-list .price-list-container .question .question-text .category .two .mobile-hide {
+    display: none;
+  }
+  .price-list .price-list-container .question .question-text .category .two .mobile-show {
+    display: flex;
+  }
+  .price-list .price-list-container .question-text {
+    display: none;
+  }
+  .price-list .price-list-container .show-text .question-text {
+    display: block;
+  }
+  .price-list .price-list-container .minus-icon {
+    display: none;
+  }
+  .price-list .price-list-container .show-text .minus-icon {
+    display: inline;
+  }
+  .price-list .price-list-container .show-text .plus-icon {
+    display: none;
+  }
+  .price-list .price-list-container .select-category {
+    margin: 20rem 0;
+  }
+}/*# sourceMappingURL=price_list.css.map */

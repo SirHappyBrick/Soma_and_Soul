@@ -1,0 +1,527 @@
+// Colors 
+
+$background: #F4F1EB;
+$pink: #DED4C9;
+$black-paragraph: rgb(47, 47, 47);
+
+// Mixins
+
+@mixin button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid $black-paragraph 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@mixin h1-styling {
+    font-family: 'feliz';
+    font-size: 4rem;
+    text-align: center;
+}
+
+// Introduction section styling
+
+.introduction {
+    background-color: $background;
+
+    .container-one {
+        padding-top: 14rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .signet-container {
+            width: 8rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text-container {
+            width: 46%;
+
+            p {
+                margin-top: 6rem;
+                font-size: 1.9rem;
+                text-align: center;
+                color: $black-paragraph;
+                font-family: 'rotunda-light';
+            }
+        }
+    }
+}
+
+// Employees section styling
+
+.employees {
+    background-color: $background;
+    padding-top: 8rem;
+
+    .container {
+        .employees-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 16rem;
+            margin-top: 10rem;
+
+            .one-employee {
+                .img-container {
+                    width: 35vw; height: 46vw;
+
+                    img {
+                        width: 100%; height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                h2 {
+                    @include h1-styling();
+                    font-size: 5rem;
+                    margin-top: 6rem;
+                }
+
+                h4 {
+                    text-align: center;
+                    font-size: 2rem;
+                    margin-top: 2rem;
+                }
+
+                p {
+                    margin-top: 4rem;
+                    width: 35vw;
+                    text-align: center;
+                    font-size: 1.8rem;
+                    font-family: 'rotunda-light';
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .line-clamp {
+                    display: block;
+                }
+
+                .read-more {
+                    margin-top: 3.5rem;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                    gap: 2rem;
+                    cursor: pointer;
+
+                    p {
+                        margin: 0;
+                        width: fit-content; height: fit-content;
+                        font-family: 'feliz';
+                        font-size: 2.4rem;
+                    }
+
+                    i {
+                        transform: rotate(180deg);
+                        font-size: 2.2rem;
+                    }
+
+                    .rotate {
+                        transform: rotate(360deg);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// Salon presentation styling
+
+.salon-presentation {
+    background-color: $background;
+    padding: 0 10rem;
+    padding-top: 16rem;
+
+    .container, .one {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18rem;
+
+        .text-container {
+            width: 30vw;
+
+            h2 {
+                @include h1-styling();
+                text-align: left;
+            }
+
+            p {
+                margin-top: 4rem;
+                font-size: 1.8rem;
+                font-family: 'rotunda-light';
+            }
+        }
+
+        .imgs-container {
+            display: flex;
+            align-items: center;
+            width: 60vw;
+            gap: 10rem;
+
+            .img-container-small {
+                width: 30%;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .img-container-big {
+                width: 50%; height: 28vw;
+
+                img {
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .two {
+        padding-top: 16rem;
+
+        .img-container {
+            width: 50vw; height: 55vh;
+
+            img {
+                width: 100%; height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .text-container {
+             h2, p {
+                text-align: right;
+             }
+        }
+    }
+}
+
+// Media query 
+
+@media (max-width: 1499px) {
+
+    .introduction {
+        .container-one {
+            padding-top: 14rem;
+
+            .signet-container {
+                width: 8rem;
+            }
+
+            .text-container {
+                width: 56%;
+
+                p {
+                    margin-top: 6rem;
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+
+    // Salon presentation styling
+
+    .salon-presentation {
+        padding: 0 10rem;
+        padding-top: 16rem;
+
+        .container, .one {
+            gap: 12rem;
+
+            .text-container {
+                width: 33vw;
+
+                h2 {
+                    font-size: 3.2rem;
+                }
+
+                p {
+                    margin-top: 4rem;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .imgs-container {
+                width: 60vw;
+                gap: 10rem;
+
+                .img-container-small {
+                    width: 30%;
+
+                }
+
+                .img-container-big {
+                    width: 50%; height: 28vw;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .introduction {
+        .container-one {
+            padding-top: 12rem;
+
+            .signet-container {
+                width: 8rem;
+            }
+
+            .text-container {
+                width: 66%;
+
+                p {
+                    margin-top: 6rem;
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+
+    // Employees section styling
+
+    .employees {
+        padding-top: 8rem;
+
+        .container {
+            .employees-wrapper {
+                gap: 6rem;
+                margin-top: 10rem;
+
+                .one-employee {
+                    .img-container {
+                        width: 35vw; height: 50vw;
+                    }
+
+                    h2 {
+                        font-size: 3.6rem;
+                        margin-top: 6rem;
+                    }
+
+                    h4 {
+                        font-size: 1.6rem;
+                        margin-top: 2rem;
+                    }
+
+                    p {
+                        margin-top: 3rem;
+                        width: 35vw;
+                        font-size: 1.6rem;
+                        -webkit-line-clamp: 3;
+                    }
+
+                    .read-more {
+                        margin-top: 1.5rem;
+                        gap: 2rem;
+
+                        p {
+                            margin: 0;
+                            font-size: 2rem;
+                        }
+
+                        i {
+                            transform: rotate(180deg);
+                            font-size: 2rem;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    // Salon presentation styling
+
+    .salon-presentation {
+        padding: 0 10rem;
+        padding-top: 16rem;
+
+        .container, .one {
+            gap: 4rem;
+            flex-direction: column;
+
+
+            .text-container {
+                width: 90vw;
+
+                h2 {
+                    font-size: 3.2rem;
+                    text-align: center;
+                }
+
+                p {
+                    margin-top: 4rem;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .imgs-container {
+                width: 100vw;
+                gap: 10rem;
+
+                .img-container-small {
+                    display: none;
+
+                }
+
+                .img-container-big {
+                    width: 100%; height: 70vh;
+                }
+            }
+        }
+
+        .two {
+            flex-direction: column-reverse;
+            padding-top: 9rem;
+
+            .img-container {
+                width: 100vw; height: 68vh;
+            }
+
+            .text-container {
+                h2 {
+                    text-align: center;
+                }
+
+                p {
+
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+
+    .introduction {
+        .container-one {
+            padding-top: 6rem;
+
+            .signet-container {
+                width: 8rem;
+            }
+
+            .text-container {
+                width: 88%;
+
+                p {
+                    margin-top: 6rem;
+                    text-align: left;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    // Employees section styling
+
+    .employees {
+        padding-top: 1rem;
+
+        .container {
+            .employees-wrapper {
+                gap: 6rem;
+                margin-top: 10rem;
+                flex-direction: column;
+
+                .one-employee {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .img-container {
+                        width: 100vw; height: 70vh;
+                    }
+
+                    h2 {
+                        font-size: 3.6rem;
+                        margin-top: 3rem;
+                    }
+
+                    h4 {
+                        font-size: 1.6rem;
+                        margin-top: 2rem;
+                    }
+
+                    p {
+                        margin-top: 3rem;
+                        width: 92vw;
+                        font-size: 1.6rem;
+                        -webkit-line-clamp: 3;
+                    }
+
+                    .read-more {
+                        margin-top: 1.5rem;
+                        gap: 2rem;
+
+                        p {
+                            margin: 0;
+                            font-size: 2rem;
+                        }
+
+                        i {
+                            transform: rotate(180deg);
+                            font-size: 2rem;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    // Salon presentation styling
+
+    .salon-presentation {
+        padding: 0 10rem;
+        padding-top: 16rem;
+
+        .container, .one {
+            gap: 4rem;
+
+            .text-container {
+                width: 92vw;
+
+                h2 {
+                    font-size: 2.6rem;
+                }
+
+                p {
+                    margin-top: 4rem;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .imgs-container {
+                width: 100vw;
+                gap: 10rem;
+
+                .img-container-big {
+                    width: 100%; height: 78vh;
+                }
+            }
+        }
+
+    }
+}

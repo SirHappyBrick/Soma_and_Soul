@@ -1,0 +1,783 @@
+// Colors 
+
+$background: #F4F1EB;
+$pink: #DED4C9;
+$black-paragraph: rgb(47, 47, 47);
+
+// Mixins
+
+@mixin button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid $black-paragraph 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@mixin h1-styling {
+    font-family: 'feliz';
+    font-size: 4rem;
+    text-align: center;
+}
+
+// Banner styling 
+
+.banner {
+    .container {
+        height: 84vh;
+        width: 100vw;
+        background-image: url(../images/index/baner_1.png);
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .text-container {
+            margin-right: 24rem;
+
+            h2 {
+                font-size: 6.4rem;
+                color: white;
+                font-family: 'feliz';
+            }
+
+            p {
+                margin-top: 4rem;
+                font-size: 2.2rem;
+                color: white;
+                line-height: 1.2;
+                font-family: 'rotunda';
+            }
+        }
+    }
+}
+
+// Select category styling
+
+.select-category {
+    background-color: $background;
+
+    .container-one {
+        padding-top: 14rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .signet-container {
+            width: 8rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text-container {
+            width: 36%;
+
+            p {
+                margin-top: 6rem;
+                font-size: 1.9rem;
+                text-align: center;
+                color: $black-paragraph;
+                font-family: 'rotunda-light';
+            }
+        }
+    }
+
+    h1 {
+        margin-top: 10rem;
+        font-family: 'feliz';
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .imgs-container {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: fit-content;
+
+        .img-desc-wrapper {
+            margin-top: 11rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-container {
+                width: 26vw; height: 72rem;
+                position: relative;
+
+                img {
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0; left: 0; right: 0;
+                }
+
+                .img2 {
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            p {
+                margin-top: 6rem;
+                font-family: 'feliz';
+                font-size: 2.4rem;
+                text-align: center;
+            }
+        }
+    }
+
+    a {
+        .button-regular {
+            @include button-regular;
+            margin-top: 10rem;
+        }
+    }
+}
+
+// Soma and soul banner styling
+
+.soma-and-soul {
+    background-color: $background;
+    padding-top: 14rem;
+
+    .img-container {
+        position: relative;
+        width: 100vw;
+        height: 85vh;
+
+        img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+
+        .text-container {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: (translate(-50%, -50%));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .container-one {
+                display: flex;
+                align-items: center;
+                gap: 6rem;
+
+                .small-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    p {
+                        color: white;
+                        font-size: 2rem;
+                        font-family: 'rotunda-light';
+                    }
+
+                    p.name {
+                        font-family: 'feliz';
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            .container-three {
+                margin-top: 4rem;
+
+                p {
+                    font-size: 2.4rem;
+                    font-family: 'feliz';
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// buy voucher section
+
+.buy-voucher {
+    background-color: $background;
+
+    .header-section {
+        width: 40%;
+        margin: 0 auto;
+
+        h2 {
+            @include h1-styling();
+            padding-top: 14rem;
+        }
+
+        p {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: 'rotunda-light';
+        }
+    }
+
+    .buy-voucher-section {
+        height: 64vh; width: 100vw;
+        background-image: url(../images/index/5.jpg);
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 14rem;
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 28%;
+            margin-right: 22rem;
+
+            h2 {
+                @include h1-styling();
+                line-height: 1.1;
+                font-size: 6rem;
+                text-align: left;
+            }
+
+            p {
+                margin-top: 4rem;
+                color: $black-paragraph;
+                font-size: 1.8rem;
+                font-family: 'rotunda-light';
+            }
+
+            .button-regular {
+                @include button-regular();
+                margin-top: 8rem;
+            }
+        }
+    }
+}
+
+// Select category styling
+
+.instagram-section {
+    background-color: $background;
+
+    h1 {
+        padding-top: 10rem;
+        font-family: 'feliz';
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .imgs-container {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: fit-content;
+
+        .img-desc-wrapper {
+            margin-top: 11rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-container {
+                width: 26vw; height: 26vw;
+                position: relative;
+
+                img {
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0; left: 0; right: 0;
+                }
+
+                .img2 {
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            p {
+                margin-top: 6rem;
+                font-family: 'feliz';
+                font-size: 2.4rem;
+                text-align: center;
+            }
+        }
+    }
+
+    a {
+        .button-regular {
+            @include button-regular;
+            margin-top: 10rem;
+        }
+    }
+}
+
+// Sponsors styling
+
+.ad-banner {
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: 2rem;
+
+        .img-container {
+            width: 20rem; height: 15rem;
+            // margin: 4rem 2rem;
+
+            img {
+                display: block;
+                width: 100%; height: 100%;
+                object-fit: cover;
+                margin: auto 0;
+                // transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+
+// Media query
+
+@media (max-width: 1499px) {
+    // Banner styling
+
+    .banner {
+        .container {  
+            .text-container {
+                margin-right: 12rem;
+    
+                h2 {
+                    font-size: 4.2rem;
+                }
+    
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    // Select category styling
+
+    .select-category {
+        background-color: $background;
+
+        .container-one {
+            padding-top: 14rem;
+
+            .signet-container {
+                width: 8rem;
+            }
+
+            .text-container {
+                width: 36%;
+
+                p {
+                    margin-top: 6rem;
+                    font-size: 1.9rem;
+                }
+            }
+        }
+
+        h1 {
+            margin-top: 10rem;
+            font-size: 4rem;
+        }
+
+        .imgs-container {
+            gap: 5rem;
+
+            .img-desc-wrapper {
+                margin-top: 11rem;
+
+                .img-container {
+                    width: 26vw; height: 50rem;
+
+                    img {
+                        width: 100%; height: 100%;
+                    }
+
+                    .img2 {
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 6rem;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+
+    // buy voucher section
+
+    .buy-voucher {
+        .header-section {
+            width: 40%;
+            margin: 0 auto;
+
+            h2 {
+                padding-top: 14rem;
+            }
+
+            p {
+                margin-top: 4rem;
+                text-align: center;
+                font-size: 1.8rem;
+                font-family: 'rotunda-light';
+            }
+        }
+
+        .buy-voucher-section {
+            height: 68vh; width: 100vw;
+            margin-top: 14rem;
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 36%;
+                margin-right: 16rem;
+
+                h2 {
+                    @include h1-styling();
+                    font-size: 6rem;
+                    text-align: left;
+                }
+
+                p {
+                    margin-top: 4rem;
+                    color: $black-paragraph;
+                    font-size: 1.8rem;
+                    font-family: 'rotunda-light';
+                }
+
+                .button-regular {
+                    @include button-regular();
+                    margin-top: 8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    // Banner styling
+
+    .banner {
+        .container {  
+            .text-container {
+                margin-right: 2rem;
+    
+                h2 {
+                    font-size: 4rem;
+                }
+    
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    // Select category styling
+
+    .select-category {
+        .container-one {
+            padding-top: 12rem;
+
+            .signet-container {
+                width: 8rem;
+            }
+
+            .text-container {
+                width: 66%;
+
+                p {
+                    margin-top: 6rem;
+                    font-size: 1.9rem;
+                }
+            }
+        }
+
+        h1 {
+            margin-top: 10rem;
+            font-size: 4rem;
+        }
+
+        .imgs-container {
+            gap: 3rem;
+
+            .img-desc-wrapper {
+                margin-top: 11rem;
+
+                .img-container {
+                    width: 26vw; height: 33rem;
+
+                    img {
+                        width: 100%; height: 100%;
+                    }
+
+                    .img2 {
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 6rem;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+
+    // buy voucher section
+
+    .buy-voucher {
+        .header-section {
+            width: 60%;
+            margin: 0 auto;
+
+            h2 {
+                padding-top: 14rem;
+            }
+
+            p {
+                margin-top: 4rem;
+                text-align: center;
+                font-size: 1.8rem;
+                font-family: 'rotunda-light';
+            }
+        }
+
+        .buy-voucher-section {
+            height: 68vh; width: 100vw;
+            margin-top: 14rem;
+            background-position: right;
+            justify-content: center;
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+                margin-right: 0rem;
+
+                h2 {
+                    @include h1-styling();
+                    font-size: 6rem;
+                    text-align: left;
+                }
+
+                p {
+                    margin-top: 4rem;
+                    color: $black-paragraph;
+                    font-size: 1.8rem;
+                    font-family: 'rotunda-light';
+                }
+
+                .button-regular {
+                    @include button-regular();
+                    margin-top: 8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    // Banner styling
+
+    .banner {
+        .container {  
+            justify-content: center;
+
+            .text-container {
+                margin-right: 0;
+                text-align: center;
+    
+                h2 {
+                    font-size: 3.2rem;
+                }
+    
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    // Select category styling
+
+    .select-category {
+        .container-one {
+            padding-top: 12rem;
+
+            .signet-container {
+                width: 8rem;
+            }
+
+            .text-container {
+                width: 88%;
+
+                p {
+                    margin-top: 6rem;
+                    text-align: left;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        h1 {
+            margin-top: 10rem;
+            font-size: 3.4rem;
+        }
+
+        .imgs-container {
+            gap: 4rem;
+            flex-direction: column;
+
+            .img-desc-wrapper {
+                margin-top: 4rem;
+
+                .img-container {
+                    width: 100vw; height: 33rem;
+
+                    img {
+                        width: 100%; height: 100%;
+                    }
+
+                    .img2 {
+                        &:hover {
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                p {
+                    margin-top: 2rem;
+                    font-size: 2.8rem;
+                }
+            }
+        }
+    }
+
+    // buy voucher section
+
+    .buy-voucher {
+        .header-section {
+            width: 90%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 3.4rem;
+                padding-top: 10rem;
+            }
+
+            p {
+                margin-top: 4rem;
+                text-align: center;
+                font-size: 1.6rem;
+            }
+        }
+
+        .buy-voucher-section {
+            height: 78vh; width: 100vw;
+            margin-top: 10rem;
+            background-position: right;
+            justify-content: center;
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 80%;
+                margin-right: 0rem;
+
+                h2 {
+                    @include h1-styling();
+                    font-size: 3.4rem;
+                    text-align: left;
+                }
+
+                p {
+                    margin-top: 4rem;
+                    color: $black-paragraph;
+                    font-size: 1.6rem;
+                    font-family: 'rotunda-light';
+                }
+
+                .button-regular {
+                    @include button-regular();
+                    margin-top: 8rem;
+                }
+            }
+        }
+    }
+
+    // Select category styling
+
+    .instagram-section {
+
+        h1 {
+            padding-top: 10rem;
+            font-family: 'feliz';
+            font-size: 3.2rem;
+            text-align: center;
+        }
+
+        .imgs-container {
+            margin-top: 6rem;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+
+            .img-desc-wrapper {
+                margin-top: 3rem;
+                flex-direction: column;
+
+                .img-container {
+                    width: 100vw; height: 50vh;
+                }
+
+                p {
+                    margin-top: 6rem;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+
+        a {
+            .button-regular {
+                @include button-regular;
+                margin-top: 5rem;
+            }
+        }
+    }
+}

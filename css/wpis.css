@@ -1,0 +1,238 @@
+.article {
+  padding-top: 5rem;
+}
+.article .banner .img-container {
+  height: 55vh;
+  width: 100vw;
+}
+.article .banner .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article .text-container {
+  width: 80vw;
+  display: block;
+  margin: 10rem auto;
+}
+.article .text-container h1 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  font-family: "feliz";
+}
+.article .text-container p {
+  color: rgb(47, 47, 47);
+  font-size: 1.8rem;
+  font-family: "rotunda-light";
+  text-align: right;
+}
+.article .text-container p.text {
+  margin-top: 4rem;
+  text-align: justify;
+  line-height: 200%;
+  font-size: 2.2rem;
+}
+.article h1 {
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  text-align: center;
+}
+.article .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 15rem;
+  padding-bottom: 15rem;
+}
+.article .wrapper .piece-of-news {
+  max-width: 22vw;
+}
+.article .wrapper .piece-of-news .img-container {
+  width: 22vw;
+  height: 20vw;
+}
+.article .wrapper .piece-of-news .img-container img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article .wrapper .piece-of-news h2 {
+  margin-top: 8rem;
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+  font-family: "feliz";
+  font-size: 6rem;
+}
+.article .wrapper .piece-of-news p {
+  margin-top: 4rem;
+  font-family: "rotunda-light";
+  line-height: 170%;
+}
+.article .wrapper .piece-of-news .space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.article .wrapper .piece-of-news .space-between p {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 1024px) {
+  .article .banner .img-container {
+    height: 60vh;
+  }
+  .article .text-container {
+    width: 84vw;
+    display: block;
+    margin: 10rem auto;
+  }
+  .article .text-container h1 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    font-family: "feliz";
+  }
+  .article .text-container p {
+    color: rgb(47, 47, 47);
+    font-size: 1.8rem;
+    font-family: "rotunda-light";
+    text-align: right;
+  }
+  .article .text-container p.text {
+    margin-top: 4rem;
+    text-align: justify;
+    line-height: 200%;
+    font-size: 2.2rem;
+  }
+  .article .text-container p.date {
+    margin-top: 2rem;
+  }
+  .article h1 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    text-align: center;
+  }
+  .article .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 15rem;
+    padding-bottom: 15rem;
+  }
+  .article .wrapper .piece-of-news {
+    max-width: 22vw;
+  }
+  .article .wrapper .piece-of-news .img-container {
+    width: 22vw;
+    height: 20vw;
+  }
+  .article .wrapper .piece-of-news .img-container img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .article .wrapper .piece-of-news h2 {
+    margin-top: 8rem;
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    font-family: "feliz";
+    font-size: 6rem;
+  }
+  .article .wrapper .piece-of-news p {
+    margin-top: 4rem;
+    font-family: "rotunda-light";
+    line-height: 170%;
+  }
+  .article .wrapper .piece-of-news .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .article .wrapper .piece-of-news .space-between p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 599px) {
+  .article .banner .img-container {
+    height: 70vh;
+  }
+  .article .text-container {
+    width: 90vw;
+    display: block;
+    margin: 10rem auto;
+  }
+  .article .text-container h1 {
+    font-size: 3rem;
+  }
+  .article .text-container p {
+    font-size: 1.6rem;
+    text-align: right;
+  }
+  .article .text-container p.text {
+    margin-top: 4rem;
+    text-align: justify;
+    line-height: 200%;
+    font-size: 1.6rem;
+  }
+  .article .text-container p.date {
+    margin-top: 2rem;
+  }
+  .article h1 {
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    text-align: center;
+  }
+  .article .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 15rem;
+    padding-bottom: 15rem;
+  }
+  .article .wrapper .piece-of-news {
+    max-width: 22vw;
+  }
+  .article .wrapper .piece-of-news .img-container {
+    width: 22vw;
+    height: 20vw;
+  }
+  .article .wrapper .piece-of-news .img-container img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .article .wrapper .piece-of-news h2 {
+    margin-top: 8rem;
+    font-family: "feliz";
+    font-size: 4rem;
+    text-align: center;
+    font-family: "feliz";
+    font-size: 6rem;
+  }
+  .article .wrapper .piece-of-news p {
+    margin-top: 4rem;
+    font-family: "rotunda-light";
+    line-height: 170%;
+  }
+  .article .wrapper .piece-of-news .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .article .wrapper .piece-of-news .space-between p {
+    font-size: 1.6rem;
+  }
+}/*# sourceMappingURL=wpis.css.map */
